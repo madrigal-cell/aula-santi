@@ -1,8 +1,67 @@
 // ===== MATEMÁTICAS · 5º Primaria =====
 // "generar" añade ejercicios nuevos cada vez (con números al azar): [nombreGenerador, cuántos]
+// Examen 23/10: propiedades conmutativa, asociativa y distributiva.
 
 AULA.tema('mates', {
-  id: 'mates-1', num: 1, trimestre: 1, origen: 'base',
+  id: 'mates-propiedades', num: 1, trimestre: 1, origen: 'base',
+  titulo: 'Propiedades: conmutativa, asociativa y distributiva',
+  resumen: 'Las propiedades de la suma y la multiplicación y cómo usarlas para calcular',
+  aprende: [
+    { t: 'Propiedad conmutativa', h: '<p><b>El orden no cambia el resultado.</b></p><table><tr><th>Suma</th><th>Multiplicación</th></tr><tr><td>a + b = b + a<br><b>7 + 5 = 5 + 7</b> = 12</td><td>a × b = b × a<br><b>6 × 4 = 4 × 6</b> = 24</td></tr></table>' +
+      '<div class="ojo">Truco: con<b>MUTA</b>tiva → <b>mu</b>damos de sitio los números (se “mudan”).<br>¡Ojo! La resta y la división <b>NO</b> la cumplen: 8 − 3 ≠ 3 − 8.</div>' },
+    { t: 'Propiedad asociativa', h: '<p><b>Podemos agrupar los números como queramos</b> y el resultado es el mismo. Los paréntesis se hacen primero.</p><table><tr><th>Suma</th><th>Multiplicación</th></tr><tr><td>(a + b) + c = a + (b + c)<br>(3 + 7) + 5 = 3 + (7 + 5)<br>10 + 5 = 3 + 12 = <b>15</b></td><td>(a × b) × c = a × (b × c)<br>(2 × 5) × 7 = 2 × (5 × 7)<br>10 × 7 = 2 × 35 = <b>70</b></td></tr></table>' +
+      '<div class="ojo">Truco: a<b>SOCIA</b>tiva → los números se hacen “socios” de otro (cambian de pareja), pero no cambian de sitio.</div>' +
+      '<div class="ej">Sirve para calcular de cabeza: 25 × 4 × 9 = (25 × 4) × 9 = 100 × 9 = <b>900</b></div>' },
+    { t: 'Propiedad distributiva', h: '<p>Multiplicar un número por una <b>suma</b> (o una resta) es lo mismo que multiplicarlo <b>por cada número</b> y después sumar (o restar) los resultados.</p><table><tr><th>Con suma</th><th>Con resta</th></tr><tr><td>a × (b + c) = a × b + a × c<br>4 × (10 + 3) = 4 × 10 + 4 × 3<br>4 × 13 = 40 + 12 = <b>52</b></td><td>a × (b − c) = a × b − a × c<br>5 × (10 − 2) = 5 × 10 − 5 × 2<br>5 × 8 = 50 − 10 = <b>40</b></td></tr></table>' +
+      '<div class="ojo">Truco: dis<b>TRIBU</b>tiva → el número de fuera se <b>reparte</b> (se distribuye) y multiplica a cada uno de los de dentro del paréntesis.</div>' +
+      '<div class="ej">Para calcular de cabeza 7 × 12: 7 × (10 + 2) = 70 + 14 = <b>84</b></div>' },
+    { t: '¿Cómo reconozco cada una?', h: '<ul><li>Los <b>mismos números cambian de orden</b> y no hay paréntesis → <b>conmutativa</b> (8 × 3 = 3 × 8).</li><li>Los números están en el <b>mismo orden</b> pero <b>cambia el paréntesis</b> → <b>asociativa</b> ((2 + 4) + 6 = 2 + (4 + 6)).</li><li>Un número <b>multiplica a un paréntesis con + o −</b> y se reparte → <b>distributiva</b> (3 × (5 + 2) = 3 × 5 + 3 × 2).</li></ul>' }
+  ],
+  chuleta: [
+    '<b>Conmutativa</b>: el orden no cambia el resultado. a + b = b + a · a × b = b × a.',
+    '<b>Asociativa</b>: agrupo como quiero. (a + b) + c = a + (b + c) · (a × b) × c = a × (b × c).',
+    '<b>Distributiva</b>: a × (b + c) = a × b + a × c · a × (b − c) = a × b − a × c.',
+    'Conmutativa y asociativa: en la <b>suma</b> y en la <b>multiplicación</b>. Distributiva: multiplicación respecto de la suma o la resta.',
+    'La resta y la división NO cumplen la conmutativa.'
+  ],
+  fichas: [
+    ['Propiedad <b>conmutativa</b>', 'El orden de los números no cambia el resultado<br><small>6 × 4 = 4 × 6</small>'],
+    ['Propiedad <b>asociativa</b>', 'Puedo agrupar los números como quiera<br><small>(2 × 5) × 7 = 2 × (5 × 7)</small>'],
+    ['Propiedad <b>distributiva</b>', 'a × (b + c) = a × b + a × c<br><small>4 × (10 + 3) = 40 + 12</small>'],
+    ['9 + 4 = 4 + 9', 'Conmutativa'],
+    ['(3 + 2) + 8 = 3 + (2 + 8)', 'Asociativa'],
+    ['5 × (6 + 1) = 5 × 6 + 5 × 1', 'Distributiva'],
+    ['¿La resta cumple la conmutativa?', 'No: 8 − 3 ≠ 3 − 8'],
+    ['Calcula fácil 25 × 4 × 6', '(25 × 4) × 6 = 100 × 6 = 600 (asociativa)']
+  ],
+  preguntas: [
+    { p: '¿Qué propiedad es? <b>8 × 3 = 3 × 8</b>', o: ['Conmutativa', 'Asociativa', 'Distributiva'], c: 0, e: 'Cambia el orden de los números → conmutativa.' },
+    { p: '¿Qué propiedad es? <b>(4 + 6) + 9 = 4 + (6 + 9)</b>', o: ['Conmutativa', 'Asociativa', 'Distributiva'], c: 1, e: 'Mismo orden, cambia el paréntesis → asociativa.' },
+    { p: '¿Qué propiedad es? <b>3 × (5 + 2) = 3 × 5 + 3 × 2</b>', o: ['Conmutativa', 'Asociativa', 'Distributiva'], c: 2, e: 'El 3 se reparte entre los de dentro → distributiva.' },
+    { p: '¿Qué propiedad es? <b>15 + 27 = 27 + 15</b>', o: ['Conmutativa', 'Asociativa', 'Distributiva'], c: 0, e: 'Conmutativa de la suma.' },
+    { p: '¿Qué propiedad es? <b>(2 × 5) × 9 = 2 × (5 × 9)</b>', o: ['Conmutativa', 'Asociativa', 'Distributiva'], c: 1, e: 'Asociativa de la multiplicación.' },
+    { p: '¿Qué propiedad es? <b>6 × (10 − 1) = 6 × 10 − 6 × 1</b>', o: ['Conmutativa', 'Asociativa', 'Distributiva'], c: 2, e: 'Distributiva respecto de la resta.' },
+    { p: 'Completa (conmutativa): 7 × 9 = 9 × ___', r: ['7'], e: '7 × 9 = 9 × 7 = 63.' },
+    { p: 'Completa (asociativa): (3 + 5) + 2 = 3 + (5 + ___)', r: ['2'], e: '(3 + 5) + 2 = 3 + (5 + 2) = 10.' },
+    { p: 'Completa (distributiva): 4 × (7 + 3) = 4 × 7 + 4 × ___', r: ['3'], e: '4 × (7 + 3) = 28 + 12 = 40.' },
+    { p: 'Calcula usando la distributiva: <b>5 × (10 + 4)</b>', r: ['70'], e: '5 × 10 + 5 × 4 = 50 + 20 = 70.' },
+    { p: 'Calcula usando la distributiva: <b>3 × (20 − 1)</b>', r: ['57'], e: '3 × 20 − 3 × 1 = 60 − 3 = 57.' },
+    { p: 'Calcula de cabeza con la asociativa: <b>25 × 4 × 7</b>', r: ['700'], e: '(25 × 4) × 7 = 100 × 7 = 700.' },
+    { p: 'Calcula de cabeza con la asociativa: <b>2 × 5 × 13</b>', r: ['130'], e: '(2 × 5) × 13 = 10 × 13 = 130.' },
+    { p: 'Calcula: <b>(6 + 4) + 8</b> y <b>6 + (4 + 8)</b>. ¿Cuánto da?', r: ['18'], e: 'Las dos dan 18: asociativa.' },
+    { p: 'Calcula 8 × 12 descomponiendo: 8 × (10 + 2) = ?', r: ['96'], e: '80 + 16 = 96.' },
+    { p: 'La resta cumple la propiedad conmutativa.', vf: false, e: '9 − 4 = 5 pero 4 − 9 no da 5.' },
+    { p: 'La propiedad conmutativa se cumple en la suma y en la multiplicación.', vf: true, e: 'a + b = b + a y a × b = b × a.' },
+    { p: 'La propiedad asociativa dice que podemos agrupar los números de distintas formas y el resultado no cambia.', vf: true, e: 'Así es.' },
+    { p: '¿Cuál de estas igualdades es la propiedad distributiva?', o: ['2 × (3 + 4) = 2 × 3 + 2 × 4', '2 × 3 = 3 × 2', '(2 × 3) × 4 = 2 × (3 × 4)'], c: 0, e: 'El 2 multiplica a cada sumando.' },
+    { p: '¿Cuál está MAL?', o: ['4 × (5 + 1) = 4 × 5 + 4 × 1', '4 × (5 + 1) = 4 × 5 + 1', '4 × (5 + 1) = 24'], c: 1, e: 'Hay que multiplicar el 4 también por el 1: 20 + 4 = 24.' },
+    { p: 'Escribe el nombre de la propiedad: <b>a × b = b × a</b>', r: ['conmutativa', 'propiedad conmutativa', 'la conmutativa'], e: 'Conmutativa.' },
+    { p: 'Escribe el nombre de la propiedad: <b>a × (b + c) = a × b + a × c</b>', r: ['distributiva', 'propiedad distributiva', 'la distributiva'], e: 'Distributiva.' }
+  ]
+});
+
+AULA.tema('mates', {
+  id: 'mates-1', num: 2, trimestre: 1, origen: 'base',
   titulo: 'Números de hasta nueve cifras',
   resumen: 'Leer, escribir, valor de posición, comparar y redondear',
   aprende: [
@@ -41,7 +100,7 @@ AULA.tema('mates', {
 });
 
 AULA.tema('mates', {
-  id: 'mates-2', num: 2, trimestre: 1, origen: 'base',
+  id: 'mates-2', num: 3, trimestre: 1, origen: 'base',
   titulo: 'Multiplicación y división',
   resumen: 'Multiplicar por varias cifras, dividir y hacer la prueba',
   aprende: [
@@ -77,7 +136,7 @@ AULA.tema('mates', {
 });
 
 AULA.tema('mates', {
-  id: 'mates-3', num: 3, trimestre: 1, origen: 'base',
+  id: 'mates-3', num: 4, trimestre: 1, origen: 'base',
   titulo: 'Múltiplos y divisores',
   resumen: 'Múltiplos, divisores, criterios de divisibilidad y números primos',
   aprende: [
