@@ -1,8 +1,127 @@
 // ===== LENGUA · 5º Primaria =====
 // origen: 'base' = tema general de 5º · 'libro' = sacado de las fotos del libro
+// Examen 27/10: la comunicación (y sus normas) + agudas, llanas, esdrújulas, sobresdrújulas y reglas de la tilde.
 
 AULA.tema('lengua', {
-  id: 'lengua-1', num: 1, trimestre: 1, origen: 'base',
+  id: 'lengua-comunicacion', num: 1, trimestre: 1, origen: 'base',
+  titulo: 'La comunicación y sus normas',
+  resumen: 'Emisor, receptor, mensaje, canal, código y contexto · normas para comunicarnos bien',
+  aprende: [
+    { t: '¿Qué es comunicarse?', h: '<p><b>Comunicarse</b> es transmitir (enviar) información a otra persona: ideas, sentimientos, noticias, deseos…</p><p>Nos comunicamos con <b>palabras</b> (hablando o escribiendo) y también <b>sin palabras</b>: con gestos, señales, dibujos, colores o sonidos.</p>' },
+    { t: 'Los elementos de la comunicación', h: '<table><tr><th>Elemento</th><th>Qué es</th><th>Ejemplo: Santi manda un WhatsApp a su padre</th></tr>' +
+      '<tr><td><b>Emisor</b></td><td>quien envía el mensaje</td><td>Santi</td></tr>' +
+      '<tr><td><b>Receptor</b></td><td>quien recibe el mensaje</td><td>su padre</td></tr>' +
+      '<tr><td><b>Mensaje</b></td><td>la información que se transmite</td><td>“Llego a las 6”</td></tr>' +
+      '<tr><td><b>Canal</b></td><td>el medio por el que viaja el mensaje</td><td>el móvil (o el aire, si habla; el papel, si escribe)</td></tr>' +
+      '<tr><td><b>Código</b></td><td>el conjunto de signos que conocen emisor y receptor</td><td>la lengua española</td></tr>' +
+      '<tr><td><b>Contexto</b> (situación)</td><td>las circunstancias que rodean la comunicación</td><td>una tarde, después del entrenamiento</td></tr></table>' +
+      '<div class="ojo">Truco: <b>E</b>misor <b>E</b>nvía · <b>R</b>eceptor <b>R</b>ecibe. Si emisor y receptor no conocen el mismo <b>código</b> (por ejemplo, otro idioma), ¡no se entienden!</div>' },
+    { t: 'Comunicación oral y escrita, verbal y no verbal', h: '<ul><li><b>Verbal</b>: usa palabras. Puede ser <b>oral</b> (hablando: una conversación, una llamada) o <b>escrita</b> (una carta, un mensaje, un cartel).</li><li><b>No verbal</b>: sin palabras. Gestos (saludar con la mano), señales de tráfico, un semáforo, el silbato del árbitro.</li></ul>' },
+    { t: 'Las normas para comunicarnos bien', h: '<p>Para que una conversación o un debate funcionen hay que seguir unas <b>normas</b>:</p><ol><li><b>Escuchar</b> con atención a quien habla.</li><li><b>Respetar el turno de palabra</b>: pedirlo levantando la mano y esperar.</li><li><b>No interrumpir</b> a los demás.</li><li><b>Hablar claro</b>, despacio y con un tono de voz adecuado (sin gritar).</li><li><b>Mirar</b> a la persona con la que hablamos.</li><li><b>Respetar las opiniones</b> de los demás, aunque no pensemos igual.</li><li>Hablar <b>del tema</b> del que se está tratando.</li></ol>' }
+  ],
+  chuleta: [
+    'Comunicarse = transmitir información.',
+    '<b>Emisor</b> envía · <b>receptor</b> recibe · <b>mensaje</b> = la información.',
+    '<b>Canal</b> = el medio (aire, papel, móvil) · <b>código</b> = los signos que ambos conocen (la lengua) · <b>contexto</b> = la situación.',
+    'Verbal (con palabras: oral o escrita) · no verbal (gestos, señales).',
+    'Normas: escuchar, pedir y respetar el turno de palabra, no interrumpir, hablar claro y sin gritar, mirar al que habla, respetar opiniones.'
+  ],
+  fichas: [
+    ['<b>Emisor</b>', 'Quien envía el mensaje'],
+    ['<b>Receptor</b>', 'Quien recibe el mensaje'],
+    ['<b>Mensaje</b>', 'La información que se transmite'],
+    ['<b>Canal</b>', 'El medio por el que viaja el mensaje (aire, papel, móvil…)'],
+    ['<b>Código</b>', 'Conjunto de signos que conocen emisor y receptor (la lengua)'],
+    ['<b>Contexto</b>', 'La situación en la que ocurre la comunicación'],
+    ['Comunicación <b>no verbal</b>', 'Sin palabras: gestos, señales, dibujos, sonidos'],
+    ['<b>Turno de palabra</b>', 'Pedirlo levantando la mano y esperar a que te toque'],
+    ['3 normas de la conversación', 'Escuchar, no interrumpir y respetar las opiniones']
+  ],
+  preguntas: [
+    { p: 'El profesor explica la lección a la clase. ¿Quién es el <b>emisor</b>?', o: ['El profesor', 'Los alumnos', 'La lección'], c: 0, e: 'El emisor es quien envía el mensaje.' },
+    { p: 'El profesor explica la lección a la clase. ¿Quién es el <b>receptor</b>?', o: ['El profesor', 'Los alumnos', 'La pizarra'], c: 1, e: 'El receptor es quien recibe el mensaje.' },
+    { p: 'Lucía escribe una carta a su abuela. ¿Cuál es el <b>canal</b>?', o: ['El papel', 'Lucía', 'El español'], c: 0, e: 'El canal es el medio por el que viaja el mensaje: el papel.' },
+    { p: 'Si hablo con un amigo en el recreo, el canal es…', o: ['el aire', 'el papel', 'el móvil'], c: 0, e: 'Cuando hablamos, la voz viaja por el aire.' },
+    { p: '¿Qué es el <b>código</b>?', o: ['El conjunto de signos que conocen emisor y receptor', 'La persona que habla', 'El lugar donde están'], c: 0, e: 'Por ejemplo, la lengua española.' },
+    { p: 'La información que se transmite se llama…', r: ['mensaje', 'el mensaje'], e: 'El mensaje.' },
+    { p: '¿Cómo se llama quien envía el mensaje?', r: ['emisor', 'el emisor'], e: 'El emisor.' },
+    { p: 'Un semáforo en rojo es comunicación…', o: ['no verbal', 'verbal oral', 'verbal escrita'], c: 0, e: 'No usa palabras: es una señal.' },
+    { p: 'Una llamada por teléfono es comunicación…', o: ['verbal oral', 'verbal escrita', 'no verbal'], c: 0, e: 'Usa palabras habladas.' },
+    { p: 'Un mensaje de WhatsApp es comunicación…', o: ['verbal escrita', 'verbal oral', 'no verbal'], c: 0, e: 'Usa palabras escritas.' },
+    { p: 'Si el emisor habla en chino y el receptor no lo entiende, falla el…', o: ['código', 'canal', 'contexto'], c: 0, e: 'No comparten el mismo código.' },
+    { p: 'En una conversación hay que interrumpir para decir rápido lo que pensamos.', vf: false, e: 'Hay que esperar el turno de palabra y no interrumpir.' },
+    { p: '¿Cuál es una norma para comunicarnos bien?', o: ['Respetar el turno de palabra', 'Hablar todos a la vez', 'Gritar para que se oiga'], c: 0, e: 'Se pide levantando la mano y se espera.' },
+    { p: 'Hay que respetar las opiniones de los demás aunque no pensemos igual.', vf: true, e: 'Es una de las normas más importantes.' },
+    { p: '¿Qué NO es una norma de la conversación?', o: ['Mirar a quien habla', 'Hablar claro', 'Cambiar de tema todo el rato'], c: 2, e: 'Hay que hablar del tema que se está tratando.' }
+  ]
+});
+
+AULA.tema('lengua', {
+  id: 'lengua-acentuacion', num: 2, trimestre: 1, origen: 'base',
+  titulo: 'Agudas, llanas, esdrújulas y sobresdrújulas',
+  resumen: 'La sílaba tónica y las reglas de la tilde',
+  aprende: [
+    { t: 'La sílaba tónica', h: '<p>En cada palabra hay una sílaba que suena <b>más fuerte</b>: es la <b>sílaba tónica</b>. Las demás son <b>átonas</b>.</p><div class="ej">ca-<b>MIÓN</b> · <b>ME</b>-sa · <b>PÁ</b>-ja-ro · <b>DÍ</b>-ga-me-lo</div><div class="ojo">Truco: di la palabra como si llamaras a alguien desde lejos: “¡ca-mióóóón!”. La sílaba que alargas es la tónica.<br>Las sílabas se cuentan <b>desde el final</b>: última, penúltima, antepenúltima…</div>' },
+    { t: 'Los 4 tipos de palabras', h: '<table><tr><th>Tipo</th><th>Tónica en la…</th><th>Ejemplos</th></tr>' +
+      '<tr><td><b>Aguda</b></td><td><b>última</b> sílaba</td><td>ca-<b>fé</b>, can-<b>ción</b>, re-<b>loj</b>, pa-<b>red</b></td></tr>' +
+      '<tr><td><b>Llana</b></td><td><b>penúltima</b></td><td><b>me</b>-sa, <b>ár</b>-bol, <b>lá</b>-piz, <b>li</b>-bro</td></tr>' +
+      '<tr><td><b>Esdrújula</b></td><td><b>antepenúltima</b></td><td><b>pá</b>-ja-ro, <b>mú</b>-si-ca, <b>sá</b>-ba-do</td></tr>' +
+      '<tr><td><b>Sobresdrújula</b></td><td>la de <b>antes</b> de la antepenúltima</td><td><b>dí</b>-ga-me-lo, <b>có</b>-me-te-lo, ex-<b>plí</b>-ca-se-lo</td></tr></table>' },
+    { t: 'Las reglas de la tilde', h: '<table><tr><th>Tipo</th><th>¿Cuándo llevan tilde?</th><th>Con tilde</th><th>Sin tilde</th></tr>' +
+      '<tr><td><b>Agudas</b></td><td>si acaban en <b>-n, -s o vocal</b></td><td>camión, compás, sofá</td><td>reloj, pared, comer</td></tr>' +
+      '<tr><td><b>Llanas</b></td><td>si <b>NO</b> acaban en -n, -s o vocal</td><td>árbol, lápiz, fácil</td><td>mesa, examen, lunes</td></tr>' +
+      '<tr><td><b>Esdrújulas</b></td><td><b>siempre</b></td><td>pájaro, música, teléfono</td><td>—</td></tr>' +
+      '<tr><td><b>Sobresdrújulas</b></td><td><b>siempre</b></td><td>dígamelo, cómetelo</td><td>—</td></tr></table>' +
+      '<div class="ojo">Las agudas y las llanas hacen lo <b>contrario</b>: las agudas llevan tilde con <b>n, s, vocal</b> y las llanas llevan tilde cuando <b>no</b> acaban así.<br>Las palabras de una sola sílaba (sol, pan, mar, fue, dio) en general <b>no</b> llevan tilde.</div>' },
+    { t: 'Cómo decidir si lleva tilde (paso a paso)', h: '<ol><li>Separa la palabra en sílabas: <i>can-cion</i>.</li><li>Busca la sílaba tónica: <i>can-<b>CION</b></i> → aguda.</li><li>Mira en qué letra acaba: en <b>n</b>.</li><li>Aplica la regla: aguda + n → <b>con tilde</b>: <b>canción</b>.</li></ol>' }
+  ],
+  chuleta: [
+    'Sílaba tónica = la que suena más fuerte. Se cuenta desde el final.',
+    '<b>Agudas</b>: tónica la última → tilde si acaban en <b>n, s o vocal</b> (camión, sofá).',
+    '<b>Llanas</b>: tónica la penúltima → tilde si <b>NO</b> acaban en n, s o vocal (árbol, lápiz).',
+    '<b>Esdrújulas</b>: antepenúltima → <b>siempre</b> tilde (pájaro).',
+    '<b>Sobresdrújulas</b>: antes de la antepenúltima → <b>siempre</b> tilde (dígamelo).',
+    'Monosílabos (una sílaba): en general sin tilde (sol, pan, fue).'
+  ],
+  fichas: [
+    ['Palabra <b>aguda</b>', 'Tónica en la ÚLTIMA sílaba<br><small>tilde si acaba en n, s o vocal</small>'],
+    ['Palabra <b>llana</b>', 'Tónica en la PENÚLTIMA<br><small>tilde si NO acaba en n, s o vocal</small>'],
+    ['Palabra <b>esdrújula</b>', 'Tónica en la ANTEPENÚLTIMA<br><small>siempre con tilde</small>'],
+    ['Palabra <b>sobresdrújula</b>', 'Tónica antes de la antepenúltima<br><small>siempre con tilde</small>'],
+    ['ca-mión', 'Aguda acabada en n → con tilde'],
+    ['re-loj', 'Aguda acabada en j → sin tilde'],
+    ['ár-bol', 'Llana acabada en l → con tilde'],
+    ['e-xa-men', 'Llana acabada en n → sin tilde'],
+    ['dí-ga-me-lo', 'Sobresdrújula → siempre tilde']
+  ],
+  preguntas: [
+    { p: '<b>Canción</b> es una palabra…', o: ['aguda', 'llana', 'esdrújula', 'sobresdrújula'], c: 0, e: 'can-CIÓN: tónica en la última → aguda.' },
+    { p: '<b>Lápiz</b> es una palabra…', o: ['aguda', 'llana', 'esdrújula', 'sobresdrújula'], c: 1, e: 'LÁ-piz: tónica en la penúltima → llana.' },
+    { p: '<b>Teléfono</b> es una palabra…', o: ['aguda', 'llana', 'esdrújula', 'sobresdrújula'], c: 2, e: 'te-LÉ-fo-no: antepenúltima → esdrújula.' },
+    { p: '<b>Dígamelo</b> es una palabra…', o: ['aguda', 'llana', 'esdrújula', 'sobresdrújula'], c: 3, e: 'DÍ-ga-me-lo: antes de la antepenúltima → sobresdrújula.' },
+    { p: '<b>Pared</b> es una palabra…', o: ['aguda', 'llana', 'esdrújula'], c: 0, e: 'pa-RED: aguda acabada en d → sin tilde.' },
+    { p: '<b>Mesa</b> es una palabra…', o: ['aguda', 'llana', 'esdrújula'], c: 1, e: 'ME-sa: llana acabada en vocal → sin tilde.' },
+    { p: '¿Cuál es la sílaba tónica de <b>murciélago</b>?', o: ['mur', 'cié', 'la', 'go'], c: 1, e: 'mur-CIÉ-la-go: esdrújula.' },
+    { p: 'Las palabras agudas llevan tilde cuando acaban en…', o: ['n, s o vocal', 'cualquier consonante', 'nunca llevan'], c: 0, e: 'camión, compás, sofá.' },
+    { p: 'Las palabras llanas llevan tilde cuando…', o: ['NO acaban en n, s o vocal', 'acaban en n, s o vocal', 'siempre'], c: 0, e: 'árbol, lápiz, fácil.' },
+    { p: 'Las esdrújulas y las sobresdrújulas llevan tilde siempre.', vf: true, e: '¡Siempre, sin excepción!' },
+    { p: '<b>Reloj</b> lleva tilde porque es aguda.', vf: false, e: 'Es aguda pero acaba en j, no en n, s o vocal → sin tilde.' },
+    { p: '<b>Examen</b> no lleva tilde.', vf: true, e: 'e-XA-men: llana acabada en n → sin tilde. (Pero exámenes es esdrújula y sí la lleva.)' },
+    { p: 'Escribe bien (con o sin tilde): <b>arbol</b>', r: ['árbol'], estricto: true, e: 'ÁR-bol: llana acabada en l → árbol.' },
+    { p: 'Escribe bien (con o sin tilde): <b>camion</b>', r: ['camión'], estricto: true, e: 'ca-MIÓN: aguda acabada en n → camión.' },
+    { p: 'Escribe bien (con o sin tilde): <b>musica</b>', r: ['música'], estricto: true, e: 'MÚ-si-ca: esdrújula → siempre tilde.' },
+    { p: 'Escribe bien (con o sin tilde): <b>cafe</b>', r: ['café'], estricto: true, e: 'ca-FÉ: aguda acabada en vocal → café.' },
+    { p: 'Escribe bien (con o sin tilde): <b>facil</b>', r: ['fácil'], estricto: true, e: 'FÁ-cil: llana acabada en l → fácil.' },
+    { p: 'Escribe bien (con o sin tilde): <b>ordenador</b>', r: ['ordenador'], estricto: true, e: 'or-de-na-DOR: aguda acabada en r → sin tilde.' },
+    { p: 'Escribe bien (con o sin tilde): <b>lunes</b>', r: ['lunes'], estricto: true, e: 'LU-nes: llana acabada en s → sin tilde.' },
+    { p: 'Escribe bien (con o sin tilde): <b>cometelo</b>', r: ['cómetelo'], estricto: true, e: 'CÓ-me-te-lo: sobresdrújula → siempre tilde.' },
+    { p: '¿Qué palabra está MAL escrita?', o: ['sofá', 'jardín', 'exámen', 'azúcar'], c: 2, e: 'examen es llana acabada en n → sin tilde.' },
+    { p: '¿Qué palabra está MAL escrita?', o: ['cárcel', 'balón', 'pajaro', 'mesa'], c: 2, e: 'pájaro es esdrújula → siempre tilde.' }
+  ]
+});
+
+AULA.tema('lengua', {
+  id: 'lengua-1', num: 3, trimestre: 1, origen: 'base',
   titulo: 'El sustantivo y las sílabas tónicas',
   resumen: 'Clases de sustantivos, género y número · agudas, llanas y esdrújulas',
   aprende: [
@@ -63,7 +182,7 @@ AULA.tema('lengua', {
 });
 
 AULA.tema('lengua', {
-  id: 'lengua-2', num: 2, trimestre: 1, origen: 'base',
+  id: 'lengua-2', num: 4, trimestre: 1, origen: 'base',
   titulo: 'Los determinantes',
   resumen: 'Artículos, demostrativos, posesivos y numerales',
   aprende: [
@@ -108,7 +227,7 @@ AULA.tema('lengua', {
 });
 
 AULA.tema('lengua', {
-  id: 'lengua-3', num: 3, trimestre: 1, origen: 'base',
+  id: 'lengua-3', num: 5, trimestre: 1, origen: 'base',
   titulo: 'El adjetivo · sinónimos y antónimos',
   resumen: 'El adjetivo calificativo, sus grados y el vocabulario',
   aprende: [
