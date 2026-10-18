@@ -22,7 +22,7 @@ Copia de todo en Google Drive: `Mi unidad/CLAUDE/AULA SANTI`.
    Cada tema: `aprende` (explicación en bloques), `chuleta`, `fichas` (8-10), `preguntas` (10-15 mezclando opción múltiple, V/F y escribir) y, en Mates, `generar`.
 3. **Deberes** (foto de una tarea) → añadir a `AULA.deberes` en `deberes.js`: enunciado, `explica` (teoría breve), `pistas` progresivas que NO den la respuesta, `solucion` (se ve solo después de intentarlo) y `practica` con ejercicios parecidos.
 4. **Examen** → añadir a `AULA.examenes` con fecha y los `temas` que entran; el simulacro se genera solo.
-5. **Inglés** → actualizar `content.js` de English Fox con el vocabulario/gramática de la unidad del libro, y poner `AULA.inglesUnidad` en `deberes.js`.
+5. **Inglés** → la unidad que están dando va en `clase.js` de English Fox (se añade a la lista y se marca sola como “En clase ahora” en todos los dispositivos con `CLASS_UNIT`). Poner también `AULA.inglesUnidad` en `deberes.js` y, si hay examen, un tema corto en `contenido/ingles.js`.
 6. Actualizar `AULA.actualizado` en `config.js` y subir `?v=N` en `index.html` si se cambia el motor.
 7. Guardar la copia en Drive (`AULA SANTI`).
 
@@ -42,3 +42,8 @@ Generadores de Mates (`generar: [['nombre', cuántos]]`): valorPosicion, redonde
 - Lenguaje para un niño de 10 años, frases cortas, ejemplos cercanos (Sevilla, Mairena, fútbol, rugby, animales).
 - En deberes, ayudar a pensar: pistas de menos a más; nunca la solución directamente.
 - Progreso y estrellas se guardan en el navegador (localStorage). Zona de papá: notas, errores frecuentes y pasar progreso a otro dispositivo.
+
+## Historial
+
+- 18/10/2026: web creada. Exámenes de la semana: Francés 20/10 (colores, familia, números 1-20), Medio 22/10 (U1 Nuestro cuerpo, págs. 8, 9, 12, 13), Mates 23/10 (propiedades conmutativa, asociativa, distributiva), Lengua 27/10 (la comunicación + agudas, llanas, esdrújulas, sobresdrújulas y tildes), Inglés (fecha por confirmar: All about me & sports).
+- Observado en sus cuadernos: escribe “como suena” (francés: an, tua, cat, quing, veint; inglés: hapi, poteito). Reforzar ortografía con preguntas de escribir.
