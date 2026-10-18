@@ -13,7 +13,17 @@
 
 AULA.deberes = [];
 
-AULA.examenes = [];
+AULA.examenes = [
+  { id: 'medio-u1', materia: 'medio', fecha: null, titulo: 'Unidad 1 · Nuestro cuerpo',
+    temas: ['medio-u1-nutricion', 'medio-u1-circulatorio', 'medio-u1-locomotor', 'medio-u1-reproduccion'],
+    notas: 'Págs. 8, 9, 12 y 13 del libro. Faltan las págs. 10-11 (sentidos y sistema nervioso) si entran.' },
+  { id: 'frances-t1', materia: 'frances', fecha: null, titulo: 'Couleurs, famille et nombres',
+    temas: ['frances-libro-memo', 'frances-libro-nombres'],
+    notas: 'Carte mémo de la pág. 25 y los números del 1 al 20 bien escritos.' },
+  { id: 'ingles-t1', materia: 'ingles', fecha: null, titulo: 'All about me & sports',
+    temas: ['ingles-about-me'],
+    notas: 'Presentarse, hobbies, deportes (go + -ing) y once / twice a week. Practica también en English Fox: unidad “All about me & sports”.' }
+];
 
 // Unidad de inglés que están dando en clase (se muestra en la pestaña de Inglés)
-AULA.inglesUnidad = '';
+AULA.inglesUnidad = 'All about me & sports';
