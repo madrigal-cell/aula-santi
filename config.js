@@ -19,6 +19,12 @@ window.AULA = {
   examenes: []
 };
 
+// Aula de otro alumno (aula-mario…): el nombre llega desde su página
+if (window.AULA_ALUMNO) {
+  AULA.alumno = window.AULA_ALUMNO;
+  AULA.englishFox += '?nombre=' + encodeURIComponent(AULA.alumno);
+}
+
 // Añade un tema a una asignatura
 AULA.tema = function (materia, t) {
   t.materia = materia;

@@ -4,11 +4,18 @@ Web de estudio para Santi (5º de Primaria, Andalucía). Publicada en GitHub Pag
 **https://madrigal-cell.github.io/aula-santi/** · repo `madrigal-cell/aula-santi` (rama `main`).
 Copia de todo en Google Drive: `Mi unidad/CLAUDE/AULA SANTI`.
 
+## Aulas de otros alumnos (misma clase)
+
+- **Mario**: https://madrigal-cell.github.io/aula-mario/ (repo `madrigal-cell/aula-mario`). Su `index.html` solo pone `window.AULA_ALUMNO = 'Mario'` y carga `cargador.js` de este repo: **todo lo que se actualiza aquí le llega a él a la vez**. No hay que tocar su repo.
+- Los textos que dicen “Santi” se cambian solos por el nombre del alumno. Su progreso se guarda aparte (clave `aulaMario.v1`) y English Fox se abre con `?nombre=Mario`.
+- Para añadir otro alumno: crear repo `aula-<nombre>` copiando el `index.html` de aula-mario y cambiando el nombre.
+
 ## Estructura
 
 | Archivo | Qué contiene |
 |---|---|
 | `index.html`, `styles.css`, `app.js` | La web (no hace falta tocarlos para añadir contenido) |
+| `cargador.js` | Carga estilos, contenidos y motor. **Al cambiar cualquier archivo, subir `V` aquí** para que se refresque en todos los dispositivos |
 | `config.js` | Asignaturas, alumno y **fecha de actualización** (`actualizado`) |
 | `contenido/lengua.js`, `mates.js`, `medio.js`, `frances.js` | Temas de cada asignatura |
 | `contenido/ingles.js` | Vacío: Inglés se estudia en **English Fox** (repo `madrigal-cell/english-fox`, archivo `content.js`) |
@@ -23,7 +30,7 @@ Copia de todo en Google Drive: `Mi unidad/CLAUDE/AULA SANTI`.
 3. **Deberes** (foto de una tarea) → añadir a `AULA.deberes` en `deberes.js`: enunciado, `explica` (teoría breve), `pistas` progresivas que NO den la respuesta, `solucion` (se ve solo después de intentarlo) y `practica` con ejercicios parecidos.
 4. **Examen** → añadir a `AULA.examenes` con fecha y los `temas` que entran; el simulacro se genera solo.
 5. **Inglés** → la unidad que están dando va en `clase.js` de English Fox (se añade a la lista y se marca sola como “En clase ahora” en todos los dispositivos con `CLASS_UNIT`). Poner también `AULA.inglesUnidad` en `deberes.js` y, si hay examen, un tema corto en `contenido/ingles.js`.
-6. Actualizar `AULA.actualizado` en `config.js` y subir `?v=N` en `index.html` si se cambia el motor.
+6. Actualizar `AULA.actualizado` en `config.js` y subir `V` en `cargador.js`.
 7. Guardar la copia en Drive (`AULA SANTI`).
 
 ## Tipos de pregunta
