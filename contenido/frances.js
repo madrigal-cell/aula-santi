@@ -52,84 +52,102 @@ AULA.tema('frances', {
 });
 
 AULA.tema('frances', {
-  id: 'frances-2', num: 2, trimestre: 1, origen: 'base', voz: 'fr-FR',
-  titulo: 'À l’école : le matériel et les couleurs',
-  resumen: 'Material escolar, colores y artículos un/une, le/la/les',
+  id: 'frances-libro-memo', num: 2, trimestre: 1, origen: 'libro', paginas: 'pág. 25 · Carte mémo', voz: 'fr-FR',
+  titulo: 'Carte mémo : les couleurs et la famille',
+  resumen: 'Ma couleur préférée · le père, la mère, le frère, la sœur',
   aprende: [
-    { t: 'Le matériel scolaire', h: '<table><tr><th>Francés</th><th>Español</th></tr>' +
-      '<tr><td><span class="say">un stylo</span></td><td>un bolígrafo</td></tr><tr><td><span class="say">un crayon</span></td><td>un lápiz</td></tr><tr><td><span class="say">une gomme</span></td><td>una goma</td></tr>' +
-      '<tr><td><span class="say">une règle</span></td><td>una regla</td></tr><tr><td><span class="say">un cahier</span></td><td>un cuaderno</td></tr><tr><td><span class="say">un livre</span></td><td>un libro</td></tr>' +
-      '<tr><td><span class="say">une trousse</span></td><td>un estuche</td></tr><tr><td><span class="say">un cartable</span></td><td>una mochila (cartera)</td></tr><tr><td><span class="say">des ciseaux</span></td><td>unas tijeras</td></tr><tr><td><span class="say">une colle</span></td><td>un pegamento</td></tr></table>' },
-    { t: 'Les couleurs', h: '<p><span class="say">rouge</span> rojo · <span class="say">bleu</span> azul · <span class="say">vert</span> verde · <span class="say">jaune</span> amarillo · <span class="say">noir</span> negro · <span class="say">blanc</span> blanco · <span class="say">rose</span> rosa · <span class="say">orange</span> naranja · <span class="say">violet</span> morado · <span class="say">gris</span> gris · <span class="say">marron</span> marrón</p><div class="ej"><span class="say">Le stylo est bleu.</span> = El boli es azul.</div>' },
-    { t: 'Los artículos', h: '<table><tr><th></th><th>Masculino</th><th>Femenino</th><th>Plural</th></tr><tr><td>Indeterminado</td><td><b>un</b> stylo</td><td><b>une</b> gomme</td><td><b>des</b> livres</td></tr><tr><td>Determinado</td><td><b>le</b> cahier</td><td><b>la</b> règle</td><td><b>les</b> crayons</td></tr></table><div class="ojo">Delante de vocal o h: <b>l’</b> → l’école, l’ami.</div>' },
-    { t: 'Frases útiles en clase', h: '<p><span class="say">Qu’est-ce que c’est ?</span> = ¿Qué es esto?<br><span class="say">C’est un cahier.</span> = Es un cuaderno.<br><span class="say">J’ai une trousse rouge.</span> = Tengo un estuche rojo.</p>' }
+    { t: 'Les couleurs (los colores)', h: '<p>Pulsa cada palabra para oírla 🔊</p><table><tr><th>Francés</th><th>Español</th></tr>' +
+      '<tr><td>🔴 <span class="say">rouge</span></td><td>rojo</td></tr><tr><td>🟢 <span class="say">vert</span></td><td>verde</td></tr><tr><td>🔵 <span class="say">bleu</span></td><td>azul</td></tr><tr><td>🟠 <span class="say">orange</span></td><td>naranja</td></tr>' +
+      '<tr><td>🟤 <span class="say">marron</span></td><td>marrón</td></tr><tr><td>🟡 <span class="say">jaune</span></td><td>amarillo</td></tr><tr><td>⚪ <span class="say">blanc</span></td><td>blanco</td></tr><tr><td>🩷 <span class="say">rose</span></td><td>rosa</td></tr>' +
+      '<tr><td>🩶 <span class="say">gris</span></td><td>gris</td></tr><tr><td>⚫ <span class="say">noir</span></td><td>negro</td></tr></table>' +
+      '<div class="ojo">¡Ojo con las que se parecen al español pero se escriben distinto! <b>vert</b> (verde), <b>bleu</b> (azul), <b>jaune</b> (amarillo), <b>blanc</b> (blanco), <b>noir</b> (negro).</div>' },
+    { t: 'Ma couleur préférée (mi color favorito)', h: '<p><span class="say">Quelle est ta couleur préférée ?</span> = ¿Cuál es tu color favorito?</p><p><span class="say">Ma couleur préférée est le bleu.</span> = Mi color favorito es el azul.</p><div class="ej">Ma couleur préférée est le <b>vert</b>. · Ma couleur préférée est le <b>rouge</b>.</div>' },
+    { t: 'La famille (la familia)', h: '<table><tr><th>Francés</th><th>Español</th></tr><tr><td><span class="say">le père</span> / <span class="say">le papa</span></td><td>el padre / el papá</td></tr><tr><td><span class="say">la mère</span> / <span class="say">la maman</span></td><td>la madre / la mamá</td></tr><tr><td><span class="say">le frère</span></td><td>el hermano</td></tr><tr><td><span class="say">la sœur</span></td><td>la hermana</td></tr></table>' +
+      '<div class="ojo"><b>le</b> va con los chicos (le père, le frère) y <b>la</b> con las chicas (la mère, la sœur).<br>En <b>sœur</b> la “o” y la “e” van pegadas: <b>œ</b>. Si no te sale en el teclado, escribe <b>soeur</b>.</div>' +
+      '<div class="ej"><span class="say">Voici mon père.</span> = Este es mi padre. · <span class="say">Voici ma sœur.</span> = Esta es mi hermana.</div>' }
   ],
   chuleta: [
-    'un stylo · un crayon · une gomme · une règle · un cahier · un livre · une trousse.',
-    'rouge, bleu, vert, jaune, noir, blanc, rose, orange.',
-    'un / une / des · le / la / les · l’ delante de vocal.',
-    '<b>Qu’est-ce que c’est ?</b> → <b>C’est un/une…</b>'
+    'rouge rojo · vert verde · bleu azul · orange naranja · marron marrón.',
+    'jaune amarillo · blanc blanco · rose rosa · gris gris · noir negro.',
+    '<b>Ma couleur préférée est le bleu.</b> = Mi color favorito es el azul.',
+    '<b>le père / le papa</b> · <b>la mère / la maman</b> · <b>le frère</b> · <b>la sœur</b>.',
+    'le → chico · la → chica.'
   ],
   fichas: [
-    ['un stylo', 'un bolígrafo'],
-    ['une gomme', 'una goma'],
-    ['un cahier', 'un cuaderno'],
-    ['une trousse', 'un estuche'],
-    ['une règle', 'una regla'],
-    ['rouge', 'rojo'],
-    ['vert', 'verde'],
-    ['jaune', 'amarillo'],
-    ['Qu’est-ce que c’est ?', '¿Qué es esto?']
+    ['rouge', 'rojo 🔴'], ['vert', 'verde 🟢'], ['bleu', 'azul 🔵'], ['orange', 'naranja 🟠'], ['marron', 'marrón 🟤'],
+    ['jaune', 'amarillo 🟡'], ['blanc', 'blanco ⚪'], ['rose', 'rosa 🩷'], ['gris', 'gris 🩶'], ['noir', 'negro ⚫'],
+    ['le père / le papa', 'el padre / el papá'], ['la mère / la maman', 'la madre / la mamá'], ['le frère', 'el hermano'], ['la sœur', 'la hermana'],
+    ['Ma couleur préférée est le bleu.', 'Mi color favorito es el azul.']
   ],
   preguntas: [
-    { p: '¿Qué es <b>un cahier</b>?', o: ['un libro', 'un cuaderno', 'un lápiz'], c: 1, e: 'Cahier = cuaderno. Libro = livre.' },
-    { p: '¿Cómo se dice “una goma” en francés?', o: ['une gomme', 'un crayon', 'une règle'], c: 0, e: 'une gomme.' },
-    { p: '¿De qué color es <b>jaune</b>?', o: ['verde', 'amarillo', 'naranja'], c: 1, e: 'jaune = amarillo.' },
-    { p: 'Escribe en francés el color <b>rojo</b>.', r: ['rouge'], e: 'rouge.' },
-    { p: 'Escribe en francés el color <b>azul</b> (masculino).', r: ['bleu'], e: 'bleu.' },
-    { p: 'Completa: ___ règle (artículo determinado)', o: ['le', 'la', 'les'], c: 1, e: 'Règle es femenino: la règle.' },
-    { p: 'Completa: ___ livres (artículo indeterminado plural)', o: ['un', 'une', 'des'], c: 2, e: 'Plural indeterminado: des.' },
-    { p: '“C’est un stylo” significa “Es un bolígrafo”.', vf: true, e: 'C’est = es · un stylo = un bolígrafo.' },
-    { p: '¿Cómo se dice “el colegio”?', o: ['le école', 'la école', 'l’école'], c: 2, e: 'Delante de vocal: l’école.' },
-    { p: '¿Qué significa “J’ai une trousse verte”?', o: ['Tengo un estuche verde', 'Tengo una regla verde', 'Es un estuche verde'], c: 0, e: 'J’ai = tengo · trousse = estuche · verte = verde (femenino).' }
+    { p: '¿Qué color es <b>jaune</b>?', o: ['amarillo', 'naranja', 'blanco'], c: 0, e: 'jaune = amarillo 🟡' },
+    { p: '¿Qué color es <b>noir</b>?', o: ['negro', 'marrón', 'gris'], c: 0, e: 'noir = negro ⚫' },
+    { p: '¿Qué color es <b>vert</b>?', o: ['verde', 'azul', 'rosa'], c: 0, e: 'vert = verde 🟢' },
+    { p: '¿Qué color es <b>marron</b>?', o: ['granate', 'marrón', 'naranja'], c: 1, e: 'marron = marrón 🟤' },
+    { p: '¿Qué color es <b>blanc</b>?', o: ['blanco', 'azul', 'negro'], c: 0, e: 'blanc = blanco ⚪' },
+    { p: 'Escribe en francés: <b>rojo</b>', r: ['rouge'], e: 'rouge 🔴' },
+    { p: 'Escribe en francés: <b>azul</b>', r: ['bleu'], e: 'bleu 🔵 (¡no “blu”!)' },
+    { p: 'Escribe en francés: <b>amarillo</b>', r: ['jaune'], e: 'jaune 🟡' },
+    { p: 'Escribe en francés: <b>negro</b>', r: ['noir'], e: 'noir ⚫' },
+    { p: 'Escribe en francés: <b>verde</b>', r: ['vert'], e: 'vert 🟢 (acaba en -t, que no suena)' },
+    { p: 'Escribe en francés: <b>blanco</b>', r: ['blanc'], e: 'blanc ⚪ (acaba en -c, que no suena)' },
+    { p: '“Ma couleur préférée est le rouge” significa…', o: ['Mi color favorito es el rojo', 'Mi madre es roja', 'No me gusta el rojo'], c: 0, e: 'Ma couleur préférée = mi color favorito.' },
+    { p: '¿Cómo se dice “la hermana”?', o: ['la sœur', 'le frère', 'la mère'], c: 0, e: 'la sœur = la hermana.' },
+    { p: '¿Qué significa <b>le frère</b>?', o: ['el padre', 'el hermano', 'el abuelo'], c: 1, e: 'le frère = el hermano.' },
+    { p: 'Escribe en francés: <b>la madre</b>', r: ['la mère', 'la mere', 'la maman', 'mère', 'maman'], e: 'la mère (o la maman).' },
+    { p: 'Escribe en francés: <b>el padre</b>', r: ['le père', 'le pere', 'le papa', 'père', 'papa'], e: 'le père (o le papa).' },
+    { p: 'Escribe en francés: <b>la hermana</b>', r: ['la sœur', 'la soeur', 'sœur', 'soeur'], e: 'la sœur.' },
+    { p: '“la père” está bien escrito.', vf: false, e: 'Père es chico → le père.' }
   ]
 });
 
 AULA.tema('frances', {
-  id: 'frances-3', num: 3, trimestre: 1, origen: 'base', voz: 'fr-FR',
-  titulo: 'Ma famille · être et avoir',
-  resumen: 'La familia y los verbos ser/estar y tener',
+  id: 'frances-libro-nombres', num: 3, trimestre: 1, origen: 'libro', paginas: 'cuaderno · números 1-20', voz: 'fr-FR',
+  titulo: 'Les nombres de 1 à 20 (bien escritos)',
+  resumen: 'Cómo suenan y cómo se escriben los números del 1 al 20',
   aprende: [
-    { t: 'La famille', h: '<table><tr><th>Francés</th><th>Español</th></tr><tr><td><span class="say">le père</span> / <span class="say">papa</span></td><td>el padre / papá</td></tr><tr><td><span class="say">la mère</span> / <span class="say">maman</span></td><td>la madre / mamá</td></tr><tr><td><span class="say">le frère</span></td><td>el hermano</td></tr><tr><td><span class="say">la sœur</span></td><td>la hermana</td></tr><tr><td><span class="say">le grand-père</span> / <span class="say">papi</span></td><td>el abuelo</td></tr><tr><td><span class="say">la grand-mère</span> / <span class="say">mamie</span></td><td>la abuela</td></tr><tr><td><span class="say">l’oncle</span> · <span class="say">la tante</span></td><td>el tío · la tía</td></tr><tr><td><span class="say">le cousin</span> · <span class="say">la cousine</span></td><td>el primo · la prima</td></tr></table>' },
-    { t: 'Verbo ÊTRE (ser / estar)', h: '<table><tr><td><span class="say">je suis</span></td><td>yo soy</td></tr><tr><td><span class="say">tu es</span></td><td>tú eres</td></tr><tr><td><span class="say">il / elle est</span></td><td>él / ella es</td></tr><tr><td><span class="say">nous sommes</span></td><td>nosotros somos</td></tr><tr><td><span class="say">vous êtes</span></td><td>vosotros sois</td></tr><tr><td><span class="say">ils / elles sont</span></td><td>ellos / ellas son</td></tr></table>' },
-    { t: 'Verbo AVOIR (tener)', h: '<table><tr><td><span class="say">j’ai</span></td><td>yo tengo</td></tr><tr><td><span class="say">tu as</span></td><td>tú tienes</td></tr><tr><td><span class="say">il / elle a</span></td><td>él / ella tiene</td></tr><tr><td><span class="say">nous avons</span></td><td>nosotros tenemos</td></tr><tr><td><span class="say">vous avez</span></td><td>vosotros tenéis</td></tr><tr><td><span class="say">ils / elles ont</span></td><td>ellos / ellas tienen</td></tr></table><div class="ej"><span class="say">J’ai une sœur et deux frères.</span> = Tengo una hermana y dos hermanos.</div>' }
+    { t: '¡Se escriben distinto de como suenan!', h: '<p>En francés muchas letras <b>no se pronuncian</b>, pero sí se escriben. En el examen hay que escribirlos <b>bien</b>. Pulsa cada número para oírlo 🔊</p>' +
+      '<table><tr><th>Nº</th><th>Se escribe</th><th>Suena parecido a…</th></tr>' +
+      '<tr><td>1</td><td><span class="say">un</span></td><td>“an”</td></tr><tr><td>2</td><td><span class="say">deux</span></td><td>“dö”</td></tr><tr><td>3</td><td><span class="say">trois</span></td><td>“truá”</td></tr><tr><td>4</td><td><span class="say">quatre</span></td><td>“catr”</td></tr><tr><td>5</td><td><span class="say">cinq</span></td><td>“sanc”</td></tr>' +
+      '<tr><td>6</td><td><span class="say">six</span></td><td>“sis”</td></tr><tr><td>7</td><td><span class="say">sept</span></td><td>“set”</td></tr><tr><td>8</td><td><span class="say">huit</span></td><td>“uit”</td></tr><tr><td>9</td><td><span class="say">neuf</span></td><td>“nöf”</td></tr><tr><td>10</td><td><span class="say">dix</span></td><td>“dis”</td></tr>' +
+      '<tr><td>11</td><td><span class="say">onze</span></td><td>“onz”</td></tr><tr><td>12</td><td><span class="say">douze</span></td><td>“duz”</td></tr><tr><td>13</td><td><span class="say">treize</span></td><td>“trez”</td></tr><tr><td>14</td><td><span class="say">quatorze</span></td><td>“catorz”</td></tr><tr><td>15</td><td><span class="say">quinze</span></td><td>“canz”</td></tr>' +
+      '<tr><td>16</td><td><span class="say">seize</span></td><td>“sez”</td></tr><tr><td>17</td><td><span class="say">dix-sept</span></td><td>“disét”</td></tr><tr><td>18</td><td><span class="say">dix-huit</span></td><td>“disuít”</td></tr><tr><td>19</td><td><span class="say">dix-neuf</span></td><td>“disnöf”</td></tr><tr><td>20</td><td><span class="say">vingt</span></td><td>“van”</td></tr></table>' },
+    { t: 'Trucos para no equivocarte', h: '<ul><li>Del <b>11 al 16</b> acaban en <b>-ze</b>: onze, douze, treize, quatorze, quinze, seize.</li><li>El <b>17, 18 y 19</b> son “diez y siete”, “diez y ocho”, “diez y nueve”, con guion: <b>dix-sept, dix-huit, dix-neuf</b>.</li><li>Fíjate en las letras mudas: deu<b>x</b>, troi<b>s</b>, cin<b>q</b>, sep<b>t</b>, hui<b>t</b>, vin<b>gt</b>.</li><li><b>qu</b> suena “c”: <b>qu</b>atre, <b>qu</b>atorze, <b>qu</b>inze.</li></ul><div class="ojo">Fallos típicos: “an” → <b>un</b> · “tua” → <b>trois</b> · “cat” → <b>quatre</b> · “sanq” → <b>cinq</b> · “nef” → <b>neuf</b> · “quing” → <b>quinze</b> · “veint” → <b>vingt</b>.</div>' }
   ],
   chuleta: [
-    'père, mère, frère, sœur, grand-père, grand-mère, oncle, tante, cousin(e).',
-    'ÊTRE: je suis, tu es, il est, nous sommes, vous êtes, ils sont.',
-    'AVOIR: j’ai, tu as, il a, nous avons, vous avez, ils ont.',
-    '¡Ojo! La edad va con AVOIR: <b>J’ai 10 ans</b>.'
+    '1 un · 2 deux · 3 trois · 4 quatre · 5 cinq',
+    '6 six · 7 sept · 8 huit · 9 neuf · 10 dix',
+    '11 onze · 12 douze · 13 treize · 14 quatorze · 15 quinze',
+    '16 seize · 17 dix-sept · 18 dix-huit · 19 dix-neuf · 20 vingt',
+    'Del 11 al 16 acaban en <b>-ze</b>. 17, 18 y 19 llevan <b>guion</b>.'
   ],
   fichas: [
-    ['la sœur', 'la hermana'],
-    ['le frère', 'el hermano'],
-    ['la grand-mère', 'la abuela'],
-    ['la tante', 'la tía'],
-    ['je suis', 'yo soy / estoy'],
-    ['nous sommes', 'nosotros somos'],
-    ['tu as', 'tú tienes'],
-    ['ils ont', 'ellos tienen']
+    ['1', 'un'], ['2', 'deux'], ['3', 'trois'], ['4', 'quatre'], ['5', 'cinq'], ['6', 'six'], ['7', 'sept'], ['8', 'huit'], ['9', 'neuf'], ['10', 'dix'],
+    ['11', 'onze'], ['12', 'douze'], ['13', 'treize'], ['14', 'quatorze'], ['15', 'quinze'], ['16', 'seize'], ['17', 'dix-sept'], ['18', 'dix-huit'], ['19', 'dix-neuf'], ['20', 'vingt']
   ],
   preguntas: [
-    { p: '¿Qué significa <b>la sœur</b>?', o: ['la madre', 'la hermana', 'la tía'], c: 1, e: 'sœur = hermana.' },
-    { p: '¿Cómo se dice “el abuelo”?', o: ['le grand-père', 'le père', 'l’oncle'], c: 0, e: 'le grand-père (o papi).' },
-    { p: 'Completa: Je ___ Santi. (être)', r: ['suis'], e: 'je suis.' },
-    { p: 'Completa: Nous ___ amis. (être)', r: ['sommes'], e: 'nous sommes.' },
-    { p: 'Completa: Tu ___ un chat. (avoir)', r: ['as'], e: 'tu as.' },
-    { p: 'Completa: Ils ___ deux chiens. (avoir)', r: ['ont'], e: 'ils ont.' },
-    { p: '“Elle a dix ans” significa…', o: ['Ella es diez', 'Ella tiene diez años', 'Ellas tienen diez años'], c: 1, e: 'elle a = ella tiene. La edad va con avoir.' },
-    { p: '“Vous êtes” es del verbo avoir.', vf: false, e: 'Es del verbo être: vous êtes = vosotros sois.' },
-    { p: '¿Cómo se dice “el primo”?', r: ['le cousin', 'cousin'], e: 'le cousin (la cousine = la prima).' },
-    { p: '¿Qué forma de AVOIR va con “nous”?', o: ['avons', 'avez', 'ont'], c: 0, e: 'nous avons.' }
+    { p: 'Escribe en francés el número <b>1</b>.', r: ['un'], e: 'un (suena “an”, pero se escribe UN).' },
+    { p: 'Escribe en francés el número <b>2</b>.', r: ['deux'], e: 'deux (con -x al final que no suena).' },
+    { p: 'Escribe en francés el número <b>3</b>.', r: ['trois'], e: 'trois.' },
+    { p: 'Escribe en francés el número <b>4</b>.', r: ['quatre'], e: 'quatre (qu suena c).' },
+    { p: 'Escribe en francés el número <b>5</b>.', r: ['cinq'], e: 'cinq.' },
+    { p: 'Escribe en francés el número <b>7</b>.', r: ['sept'], e: 'sept (la p no suena).' },
+    { p: 'Escribe en francés el número <b>9</b>.', r: ['neuf'], e: 'neuf.' },
+    { p: 'Escribe en francés el número <b>11</b>.', r: ['onze'], e: 'onze.' },
+    { p: 'Escribe en francés el número <b>12</b>.', r: ['douze'], e: 'douze.' },
+    { p: 'Escribe en francés el número <b>13</b>.', r: ['treize'], e: 'treize.' },
+    { p: 'Escribe en francés el número <b>14</b>.', r: ['quatorze'], e: 'quatorze.' },
+    { p: 'Escribe en francés el número <b>15</b>.', r: ['quinze'], e: 'quinze.' },
+    { p: 'Escribe en francés el número <b>16</b>.', r: ['seize'], e: 'seize.' },
+    { p: 'Escribe en francés el número <b>17</b>.', r: ['dix-sept', 'dix sept'], e: 'dix-sept (con guion).' },
+    { p: 'Escribe en francés el número <b>18</b>.', r: ['dix-huit', 'dix huit'], e: 'dix-huit (con guion).' },
+    { p: 'Escribe en francés el número <b>19</b>.', r: ['dix-neuf', 'dix neuf'], e: 'dix-neuf (con guion).' },
+    { p: 'Escribe en francés el número <b>20</b>.', r: ['vingt'], e: 'vingt (suena “van”).' },
+    { p: '¿Qué número es <b>huit</b>?', r: ['8', 'ocho'], e: 'huit = 8.' },
+    { p: '¿Qué número es <b>seize</b>?', o: ['6', '16', '17'], c: 1, e: 'seize = 16 (six = 6).' },
+    { p: '¿Cuál está bien escrito?', o: ['quinze', 'quing', 'kinze'], c: 0, e: '15 = quinze.' },
+    { p: '¿Cuál está bien escrito?', o: ['veint', 'vingt', 'vin'], c: 1, e: '20 = vingt.' },
+    { p: '¿Cuál está bien escrito?', o: ['tua', 'trois', 'troi'], c: 1, e: '3 = trois.' },
+    { p: '¿Qué número es <b>douze</b>?', o: ['2', '12', '20'], c: 1, e: 'douze = 12.' }
   ]
 });
