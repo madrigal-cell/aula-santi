@@ -193,7 +193,8 @@
 
   /* ---------- Vistas ---------- */
   function deberesPendientes() { return A.deberes.filter(function (d) { return !E.deberes[d.id] && (!d.para || diasHasta(d.para) >= -3); }); }
-  function examenesProximos() { return A.examenes.filter(function (x) { return x.fecha && diasHasta(x.fecha) >= 0; }).sort(function (a, b) { return a.fecha < b.fecha ? -1 : 1; }); }
+  function examenesProximos() { return A.examenes.filter(function (x) { return !x.fecha || diasHasta(x.fecha) >= 0; }).sort(function (a, b) { return (a.fecha || '9') < (b.fecha || '9') ? -1 : 1; }); }
+  function cuandoExamen(x) { if (!x.fecha) return 'Fecha por confirmar'; var n = diasHasta(x.fecha); return n > 1 ? 'Faltan ' + n + ' días' : n === 1 ? 'Es mañana' : n === 0 ? '¡Es HOY!' : 'Ya pasó'; }
   function progresoMateria(id) {
     var ts = A.temas[id] || [], tot = ts.length * 3, s = 0;
     ts.forEach(function (t) { s += estrellasDeNota(estTema(t.id).mejor); });
@@ -209,7 +210,7 @@
     // Lo de hoy
     var hoy = '';
     pend.slice(0, 4).forEach(function (d) { var m = materia(d.materia); hoy += '<li class="row"><span>' + m.icono + '</span><span class="grow"><b>' + esc(d.titulo) + '</b><br><span class="small muted">' + m.nombre + (d.para ? ' · para el ' + fechaBonita(d.para) : '') + '</span></span><a class="btn" style="--c:' + m.color + '" href="#/deberes">Hacer</a></li>'; });
-    exs.slice(0, 3).forEach(function (x) { var m = materia(x.materia), n = diasHasta(x.fecha); hoy += '<li class="row"><span>📝</span><span class="grow"><b>Examen de ' + m.nombre + '</b><br><span class="small muted">' + (n === 0 ? '¡Es HOY!' : n === 1 ? 'Es mañana' : 'Faltan ' + n + ' días') + ' · ' + esc(x.titulo || '') + '</span></span><a class="btn" style="--c:' + m.color + '" href="#/ex/' + x.id + '">Repasar</a></li>'; });
+    exs.slice(0, 4).forEach(function (x) { var m = materia(x.materia); hoy += '<li class="row"><span>📝</span><span class="grow"><b>Examen de ' + m.nombre + '</b><br><span class="small muted">' + cuandoExamen(x) + ' · ' + esc(x.titulo || '') + '</span></span><a class="btn" style="--c:' + m.color + '" href="#/ex/' + x.id + '">Repasar</a></li>'; });
     if (!hoy) {
       var sug = sugerencia();
       if (sug) { var ms = materia(sug.materia); hoy = '<li class="row"><span>' + ms.icono + '</span><span class="grow"><b>Te propongo repasar:</b><br>' + esc(sug.titulo) + ' <span class="small muted">(' + ms.nombre + ')</span></span><a class="btn" style="--c:' + ms.color + '" href="#/t/' + sug.id + '">Vamos</a></li>'; }
@@ -401,9 +402,9 @@
     var prox = examenesProximos(), pas = A.examenes.filter(function (x) { return x.fecha && diasHasta(x.fecha) < 0; });
     if (!A.examenes.length) h += '<div class="vacio card"><div class="lince">' + lince() + '</div>No hay exámenes apuntados.<br>Cuando sepas la fecha de uno, díselo a papá y aparecerá aquí con su simulacro.</div>';
     function fila(x) {
-      var m = materia(x.materia), n = diasHasta(x.fecha), notas = E.notas.filter(function (z) { return z.ex === x.id; }), mejor = notas.length ? Math.max.apply(null, notas.map(function (z) { return z.nota; })) : null;
+      var m = materia(x.materia), notas = E.notas.filter(function (z) { return z.ex === x.id; }), mejor = notas.length ? Math.max.apply(null, notas.map(function (z) { return z.nota; })) : null;
       var temas = (x.temas || []).map(function (t) { return (tema(t) || {}).titulo; }).filter(Boolean).join(' · ');
-      return '<section class="card deber" style="--c:' + m.color + '"><div class="row" style="justify-content:space-between"><span class="tag" style="--c:' + m.color + ';--cl:' + m.claro + '">' + m.icono + ' ' + m.nombre + '</span><b>' + (n > 1 ? 'Faltan ' + n + ' días' : n === 1 ? 'Mañana' : n === 0 ? '¡HOY!' : 'Ya pasó') + '</b></div><h2 style="margin-top:8px">' + esc(x.titulo || 'Examen') + '</h2><p class="muted small">' + fechaBonita(x.fecha) + (temas ? '<br>Entra: ' + esc(temas) : '') + '</p>' +
+      return '<section class="card deber" style="--c:' + m.color + '"><div class="row" style="justify-content:space-between"><span class="tag" style="--c:' + m.color + ';--cl:' + m.claro + '">' + m.icono + ' ' + m.nombre + '</span><b>' + cuandoExamen(x) + '</b></div><h2 style="margin-top:8px">' + esc(x.titulo || 'Examen') + '</h2><p class="muted small">' + (x.fecha ? fechaBonita(x.fecha) + '<br>' : '') + (temas ? 'Entra: ' + esc(temas) : '') + '</p>' +
         (x.notas ? '<p class="small">' + x.notas + '</p>' : '') +
         '<div class="row"><a class="btn" style="--c:' + m.color + '" href="#/ex/' + x.id + '">📝 Simulacro</a>' + (x.temas || []).map(function (t) { var tt = tema(t); return tt ? '<a class="btn sec" href="#/t/' + t + '/chuleta">📋 ' + esc(tt.titulo) + '</a>' : ''; }).join('') + '</div>' +
         (mejor != null ? '<p class="small muted">Mejor nota en el simulacro: <b>' + mejor + '</b></p>' : '') + (x.nota != null ? '<p><b>Nota del examen real: ' + x.nota + '</b></p>' : '') + '</section>';
