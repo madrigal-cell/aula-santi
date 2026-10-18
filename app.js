@@ -3,7 +3,18 @@
   'use strict';
   var A = window.AULA;
   var $app = document.getElementById('app');
-  var KEY = 'aulaSanti.v1';
+  var KEY = 'aula' + (A.alumno || 'Santi') + '.v1';
+
+  /* Los contenidos se escriben para Santi; en el aula de otro alumno se cambia el nombre solo */
+  if (A.alumno && A.alumno !== 'Santi') {
+    var cambia = function (o) {
+      if (typeof o === 'string') return o.replace(/\bSanti\b/g, A.alumno);
+      if (Array.isArray(o)) { for (var i = 0; i < o.length; i++) o[i] = cambia(o[i]); return o; }
+      if (o && typeof o === 'object') { for (var k in o) if (k !== 'id' && k !== 'materia') o[k] = cambia(o[k]); return o; }
+      return o;
+    };
+    cambia(A.temas); cambia(A.deberes); cambia(A.examenes);
+  }
 
   /* ---------- Utilidades ---------- */
   function hoyISO(d) { d = d || new Date(); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
@@ -98,6 +109,7 @@
       '<path d="M46 62 L54 62 L50 66 Z" fill="#d0607a"/>' + boca + '</svg>';
   }
   document.getElementById('brandLince').innerHTML = lince();
+  try { document.querySelector('.brand-text b').textContent = A.alumno; document.title = 'Aula de ' + A.alumno; } catch (e) { }
 
   var ANIMOS_OK = ['¡Genial!', '¡Muy bien!', '¡Eso es!', '¡Crack!', '¡Perfecto!', '¡Bravo!', '¡Así se hace!'];
   var ANIMOS_KO = ['¡Casi! Mira la explicación.', 'No pasa nada, así se aprende.', 'Ups, fíjate bien.', 'La próxima la clavas.'];
