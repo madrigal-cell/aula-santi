@@ -4,7 +4,7 @@
 // Uso: <script>window.AULA_ALUMNO = 'Mario';</script>
 //      <script src="https://madrigal-cell.github.io/aula-santi/cargador.js"></script>
 (function () {
-  var V = '5';
+  var V = '6';
   var base = document.currentScript.src.replace(/cargador\.js.*$/, '');
   document.write('<link rel="stylesheet" href="' + base + 'styles.css?v=' + V + '">');
   ['config.js', 'contenido/lengua.js', 'contenido/mates.js', 'contenido/medio.js', 'contenido/medio-u2.js', 'contenido/ingles.js',
