@@ -18,6 +18,7 @@ Copia de todo en Google Drive: `Mi unidad/CLAUDE/AULA SANTI`.
 | `cargador.js` | Carga estilos, contenidos y motor. **Al cambiar cualquier archivo, subir `V` aquí** para que se refresque en todos los dispositivos |
 | `config.js` | Asignaturas, alumno y **fecha de actualización** (`actualizado`) |
 | `contenido/lengua.js`, `mates.js`, `medio.js`, `frances.js` | Temas de cada asignatura |
+| `contenido/medio-u2.js` | Medio · Unidad 2 “La salud” (las unidades nuevas pueden ir en archivo propio; añadirlo a la lista de `cargador.js`) |
 | `contenido/ingles.js` | Vacío: Inglés se estudia en **English Fox** (repo `madrigal-cell/english-fox`, archivo `content.js`) |
 | `deberes.js` | Deberes, exámenes y unidad de inglés que están dando |
 
@@ -54,3 +55,4 @@ Generadores de Mates (`generar: [['nombre', cuántos]]`): valorPosicion, redonde
 
 - 18/10/2026: web creada. Exámenes de la semana: Francés 20/10 (colores, familia, números 1-20), Medio 22/10 (U1 Nuestro cuerpo, págs. 8, 9, 12, 13), Mates 23/10 (propiedades conmutativa, asociativa, distributiva), Lengua 27/10 (la comunicación + agudas, llanas, esdrújulas, sobresdrújulas y tildes), Inglés (fecha por confirmar: All about me & sports).
 - Observado en sus cuadernos: escribe “como suena” (francés: an, tua, cat, quing, veint; inglés: hapi, poteito). Reforzar ortografía con preguntas de escribir.
+- 09/11/2026: Medio U2 “La salud” (págs. 16-19) en `contenido/medio-u2.js`, dos temas; examen el 12/11.
