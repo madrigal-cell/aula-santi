@@ -5,7 +5,7 @@
 window.AULA = {
   alumno: 'Santi',
   curso: '5º de Primaria',
-  actualizado: '2026-10-18',
+  actualizado: '2026-11-09',
   englishFox: 'https://madrigal-cell.github.io/english-fox/',
   materias: [
     { id: 'lengua',  nombre: 'Lengua',                 icono: '📖', color: '#e4572e', claro: '#fde4dc' },

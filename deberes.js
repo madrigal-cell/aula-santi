@@ -14,6 +14,9 @@
 AULA.deberes = [];
 
 AULA.examenes = [
+  { id: 'medio-u2', materia: 'medio', fecha: '2026-11-12', titulo: 'Unidad 2 · La salud',
+    temas: ['medio-u2-salud', 'medio-u2-enfrentamos'],
+    notas: 'Págs. 16-19 del libro: salud y enfermedad, enfermedades infecciosas y no infecciosas, agentes infecciosos, diagnóstico (signos y síntomas), tratamiento, prevención y sistema sanitario.' },
   { id: 'medio-u1', materia: 'medio', fecha: '2026-10-22', titulo: 'Unidad 1 · Nuestro cuerpo',
     temas: ['medio-u1-nutricion', 'medio-u1-circulatorio', 'medio-u1-locomotor', 'medio-u1-reproduccion'],
     notas: 'Págs. 8, 9, 12 y 13 del libro. Faltan las págs. 10-11 (sentidos y sistema nervioso) si entran.' },
