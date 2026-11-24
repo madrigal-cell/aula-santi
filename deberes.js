@@ -12,6 +12,51 @@
 //   temas:['mates-1','mates-2'], notas:'Entra la página 24', nota:null }
 
 AULA.deberes = [
+  { id: 'medio-poblacion-examen-1', materia: 'medio', para: '2026-11-25', titulo: '📝 Examen tipo cole 1 · La población',
+    enunciado: '<div class="aprende">' +
+      '<div class="ojo">✏️ Hazlo en una hoja, <b>con lápiz y sin mirar el libro</b>. Escribe el número de cada pregunta y tu nombre arriba. Tiempo: unos 45 minutos. Cuando acabes, dale la hoja a papá para que la corrija.</div>' +
+      '<ol>' +
+      '<li><b>(1 punto)</b> ¿Qué es la <b>población</b>? ¿Y la <b>demografía</b>?</li>' +
+      '<li><b>(1,5 puntos)</b> Copia y completa la tabla:<table><tr><th></th><th>¿Qué es?</th><th>¿Cada cuánto se hace?</th></tr><tr><td>Padrón municipal</td><td>__________</td><td>__________</td></tr><tr><td>Registro Civil</td><td>__________</td><td>__________</td></tr><tr><td>Censo</td><td>__________</td><td>__________</td></tr></table></li>' +
+      '<li><b>(1 punto)</b> Une cada variable con su definición:<table><tr><td>Natalidad</td><td>Salida de personas para ir a residir a otro país</td></tr><tr><td>Mortalidad</td><td>Número de personas que nacen en un año</td></tr><tr><td>Emigración</td><td>Llegada de personas de otro país para vivir aquí</td></tr><tr><td>Inmigración</td><td>Número de personas que fallecen en un año</td></tr></table></li>' +
+      '<li><b>(1,5 puntos)</b> En un pueblo, en un año, nacen 120 personas, fallecen 150, llegan 80 inmigrantes y se van 20 emigrantes.<br>a) Calcula el crecimiento natural.<br>b) Calcula el crecimiento real.<br>c) ¿Cada uno es positivo o negativo?</li>' +
+      '<li><b>(1 punto)</b> ¿Qué es la <b>densidad de población</b> y cómo se calcula?</li>' +
+      '<li><b>(1 punto)</b> ¿Qué zonas de España están más pobladas? ¿Y cuáles menos?</li>' +
+      '<li><b>(1,5 puntos)</b> <i>In English</i>: write the definition of <b>birth rate</b> and <b>mortality</b>.</li>' +
+      '<li><b>(1,5 puntos)</b> Explica la diferencia entre la población <b>ocupada</b> y la <b>no ocupada</b>. Pon un ejemplo de cada una.</li>' +
+      '</ol></div>',
+    solucion: '<ol><li>Población: conjunto de personas que viven en un determinado lugar. Demografía: estudio de la población y su evolución.</li><li>Padrón: registro de los habitantes de un municipio, cada año. Registro Civil: anota nacimientos, fallecimientos y matrimonios, continuamente. Censo: registro de los habitantes de un país, cada diez años.</li><li>Natalidad → nacen en un año · Mortalidad → fallecen en un año · Emigración → salida a otro país · Inmigración → llegada desde otro país.</li><li>a) CN = 120 − 150 = −30. b) CR = −30 + 80 − 20 = 30. c) CN negativo, CR positivo.</li><li>Sirve para saber si un territorio está muy poblado. Habitantes ÷ superficie en km².</li><li>Más pobladas: Madrid, zonas costeras y archipiélagos. Menos: Meseta Norte y Meseta Sur.</li><li>Birth rate: the number of people who are born in a specific place and time. Mortality: the number of people who die in a specific place and time.</li><li>Ocupada: trabajan y reciben dinero (una médica). No ocupada: en paro o buscando su primer empleo (un vecino en paro).</li></ol>'
+  },
+  { id: 'medio-poblacion-examen-2', materia: 'medio', para: '2026-11-25', titulo: '📝 Examen tipo cole 2 · La población',
+    enunciado: '<div class="aprende">' +
+      '<div class="ojo">✏️ Hazlo en una hoja, <b>con lápiz y sin mirar el libro</b>. Escribe el número de cada pregunta y tu nombre arriba. Tiempo: unos 45 minutos. Cuando acabes, dale la hoja a papá para que la corrija.</div>' +
+      '<ol>' +
+      '<li><b>(1 punto)</b> Explica la diferencia entre el <b>padrón municipal</b> y el <b>censo</b>.</li>' +
+      '<li><b>(1,5 puntos)</b> Clasifica en población <b>ocupada</b>, <b>no ocupada</b> o <b>no activa</b>:<br>una médica que trabaja en un hospital · un abuelo jubilado · una joven que busca su primer empleo · un alumno de 5º · un camarero que cobra su sueldo · una persona en paro</li>' +
+      '<li><b>(1 punto)</b> ¿Qué datos recoge el <b>Registro Civil</b>? ¿Cuándo los recoge?</li>' +
+      '<li><b>(1,5 puntos)</b> Calcula la densidad de población:<br>a) Un pueblo con 5 000 habitantes y 50 km².<br>b) Una ciudad con 60 000 habitantes y 20 km².<br>c) ¿Cuál está más poblado?</li>' +
+      '<li><b>(1 punto)</b> Escribe <b>V</b> o <b>F</b>. Corrige las falsas:<br>a) España tiene crecimiento natural positivo.<br>b) El censo se hace cada diez años.<br>c) La inmigración es la salida de personas hacia otro país.<br>d) Antes de 1975 muchos españoles emigraron a Alemania.</li>' +
+      '<li><b>(1 punto)</b> ¿Qué es el <b>éxodo rural</b>? ¿En qué época ocurrió?</li>' +
+      '<li><b>(1,5 puntos)</b> <i>In English</i>: what is <b>immigration</b>? What is <b>emigration</b>?</li>' +
+      '<li><b>(1,5 puntos)</b> Escribe las fórmulas del <b>crecimiento natural</b> y del <b>crecimiento real</b> y explica qué significa cada letra.</li>' +
+      '</ol></div>',
+    solucion: '<ol><li>El padrón registra los habitantes de un municipio y se hace cada año; el censo registra los habitantes de un país y se hace cada diez años.</li><li>Ocupada: médica, camarero. No ocupada: joven que busca su primer empleo, persona en paro. No activa: abuelo jubilado, alumno de 5º.</li><li>Nacimientos, fallecimientos y matrimonios. Continuamente.</li><li>a) 5 000 ÷ 50 = 100 hab/km². b) 60 000 ÷ 20 = 3 000 hab/km². c) La ciudad.</li><li>a) F: es negativo (el real es positivo). b) V. c) F: la inmigración es la llegada; la salida es la emigración. d) V.</li><li>La salida de la gente del campo a las ciudades. Antes de 1975.</li><li>Immigration: arrival of people from different places. Emigration: departure of people from their places.</li><li>CN = N − M (nacimientos menos muertes/fallecimientos). CR = CN + I − E (crecimiento natural más inmigrantes menos emigrantes).</li></ol>'
+  },
+  { id: 'medio-poblacion-examen-3', materia: 'medio', para: '2026-11-26', titulo: '📝 Examen tipo cole 3 · La población',
+    enunciado: '<div class="aprende">' +
+      '<div class="ojo">✏️ Hazlo en una hoja, <b>con lápiz y sin mirar el libro</b>. Escribe el número de cada pregunta y tu nombre arriba. Tiempo: unos 45 minutos. Cuando acabes, dale la hoja a papá para que la corrija.</div>' +
+      '<ol>' +
+      '<li><b>(1 punto)</b> Define la <b>densidad de población</b>.</li>' +
+      '<li><b>(1 punto)</b> ¿Qué zonas suelen ser las más pobladas?</li>' +
+      '<li><b>(1 punto)</b> ¿Adónde emigraba la población antes del año 1975?</li>' +
+      '<li><b>(1,5 puntos)</b> Después de 1995, ¿de dónde venían los inmigrantes que llegaron a España? ¿En qué comunidades se instalaron sobre todo?</li>' +
+      '<li><b>(1,5 puntos)</b> Densidades de 2020: Madrid 841 · Andalucía 97 · Extremadura 25 · Melilla 7 001 (hab/km²).<br>a) Ordénalas de más a menos densidad.<br>b) La media de España es 93,6. ¿Andalucía está por encima o por debajo?</li>' +
+      '<li><b>(1,5 puntos)</b> En una ciudad nacen 300 personas, fallecen 250, llegan 40 inmigrantes y se van 90 emigrantes. Calcula el crecimiento natural y el crecimiento real.</li>' +
+      '<li><b>(1 punto)</b> ¿Qué es la población <b>no activa</b>? Pon dos ejemplos.</li>' +
+      '<li><b>(1,5 puntos)</b> <i>In English</i>: match each word with its definition.<table><tr><td>Birth rate</td><td>Departure of people from their places</td></tr><tr><td>Mortality</td><td>The number of people who are born in a specific place and time</td></tr><tr><td>Immigration</td><td>The number of people who die in a specific place and time</td></tr><tr><td>Emigration</td><td>Arrival of people from different places</td></tr></table></li>' +
+      '</ol></div>',
+    solucion: '<ol><li>Es la relación entre los habitantes y la superficie: habitantes ÷ km². Sirve para saber si un territorio está muy poblado.</li><li>Madrid, las zonas costeras y los archipiélagos.</li><li>A las ciudades (éxodo rural) y fuera del país, a destinos como Alemania.</li><li>De América Latina, África y Asia. Cataluña, Madrid, Andalucía y el País Vasco.</li><li>a) Melilla, Madrid, Andalucía, Extremadura. b) Por encima (97 &gt; 93,6).</li><li>CN = 300 − 250 = 50. CR = 50 + 40 − 90 = 0 (la población no cambia).</li><li>Personas que trabajan sin recibir dinero a cambio: jubilados, estudiantes.</li><li>Birth rate → born · Mortality → die · Immigration → arrival · Emigration → departure.</li></ol>'
+  },
   { id: 'medio-u2-examen-1', materia: 'medio', para: '2026-11-10', titulo: '📝 Examen tipo cole 1 · La salud',
     enunciado: '<div class="aprende">' +
       '<div class="ojo">✏️ Hazlo en una hoja, <b>con lápiz y sin mirar el libro</b>. Escribe el número de cada pregunta y tu nombre arriba. Tiempo: unos 45 minutos. Cuando acabes, dale la hoja a papá para que la corrija.</div>' +
@@ -57,6 +102,9 @@ AULA.deberes = [
 ];
 
 AULA.examenes = [
+  { id: 'medio-poblacion', materia: 'medio', fecha: null, titulo: '⚡ Examen SORPRESA esta semana · La población',
+    temas: ['medio-poblacion-estudio', 'medio-poblacion-trabajo', 'medio-poblacion-ingles'],
+    notas: '¡Puede caer cualquier día hasta el viernes 27! Entran las págs. 52, 53 y 54 del libro: población y demografía, padrón, Registro Civil y censo, variables demográficas, crecimiento natural y real, densidad, población y trabajo y migraciones. Lo del cuaderno (birth rate, mortality, immigration, emigration) hay que sabérselo <b>en inglés</b>. En Deberes tienes 3 exámenes tipo cole para hacer en papel.' },
   { id: 'medio-u2', materia: 'medio', fecha: '2026-11-12', titulo: 'Unidad 2 · La salud',
     temas: ['medio-u2-salud', 'medio-u2-enfrentamos'],
     notas: 'Págs. 16-19 del libro: salud y enfermedad, enfermedades infecciosas y no infecciosas, agentes infecciosos, diagnóstico (signos y síntomas), tratamiento, prevención y sistema sanitario. En Deberes tienes 3 exámenes tipo cole para hacer en papel.' },
